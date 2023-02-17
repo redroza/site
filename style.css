@@ -1,0 +1,177 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+.page {
+overflow: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F5F5F5;
+    font-family: "Montserrat";
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 35px;
+    /* font-family:  "Montserrat SemiBold 600 Italic" ; */
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-family:  "Montserrat" ;
+}
+
+h1 {
+    font-family: "Montserrat";
+}
+
+h3 {
+    font-family: "Montserrat";
+    font-size: 40px;
+}
+
+p {
+    font-family: "Sofia Sans";
+    font-size: 32px;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    margin: auto;
+    padding: 70px;
+    background-color: #81BECE;
+
+}
+.about img {
+    width: 311.05px;
+    height: 315px;
+}
+
+.works {
+    padding: 70px;
+    align-items: center;
+    background-color: #378BA4;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding-left: 70px; 
+    text-align: center;  /* выравнивание по центру */
+    
+}
+.works_wrapper {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    margin: 30px 70px 0px; 
+    /* убрать паддинги добавить маржин  топ горизонталь низ*/
+}
+.works img {
+    width: 238px;
+    height: 228px
+}   
+footer {
+    padding: 20px;
+    font-family:  "Montserrat" ;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .about {
+        width: 900px;
+        /* убрать падинг */
+    }
+
+    .works {
+        width: 900px;
+        flex-direction: column;
+        /* убрать падинг */
+    }
+
+    .works h3 {
+    }
+
+    .works_wrapper img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .works_wrapper {
+        display: flex;
+        gap: 25px;
+        align-items: center;
+        /* убрать падинги */
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .about {
+        display: flex;
+        flex-direction: column;;
+
+        /* убрать ширину добавить дисплей и флекс */
+    }
+
+    .about img {
+        width:  60%;
+        height: 60%;
+        padding-right: 20px;
+    }
+
+    .works {
+        flex-direction: column;
+        /* убрать ширину и падинг */
+
+    }
+
+    /* .works_wrapper img {
+        width: 120px;
+        height: 120px;
+    } */
+
+    .works_wrapper {
+        display: flex;
+        gap: 25px;
+        align-items: center;
+        flex-direction: column;
+         /* убрать падинг */
+    }
+
+    .works_wrapper img {
+        width: 238px;
+        height: 228px;
+    }
+    
+}
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .about {
+        width: 320px;
+    }
+    nav ul{
+        display: none;
+    }
+
+    .works {
+        width: 320px;
+        flex-direction: column;
+        padding-left: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: auto;
+    }
+}
